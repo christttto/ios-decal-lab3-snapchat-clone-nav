@@ -71,9 +71,9 @@
 		417986CF1E6657910050E1DF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4196F2E21E6514EE009916E4 /* ImagePickerController.swift */,
 				45EA23DF1F7C83F1009D1B40 /* ImagePreviewViewController.swift */,
 				417986CE1E6657650050E1DF /* Cells */,
-				4196F2E21E6514EE009916E4 /* ImagePickerController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";

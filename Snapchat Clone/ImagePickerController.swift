@@ -16,7 +16,6 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor = UIColor(red: 0, green: 0.8196, blue: 0.9294, alpha: 1.0)
-        
         navigationController?.navigationBar.tintColor = UIColor.white
         imageCollectionView.collectionViewLayout = ImageFlowLayout()
     }
@@ -24,15 +23,19 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
     
-    /// An image cell was selected
+    /// This method is called every time a image cell is tapped. You'll
+    /// need to use pass the `image` parameter in some way to the
+    /// ImagePreviewViewController
     ///
     /// - Parameter image: UIImage displayed in the selected cell
     func selectImage(_ image: UIImage) {
         // TODO: take this image and display it in a new view controller
-        performSegue(withIdentifier: "goToPreview", sender: nil)
     }
+    
+    /// TODO: override prepareForSegue to pass the selected image over to the next view
+    
+    
     
     /// DON'T MODIFY CODE HERE AND BELOW (we'll be going over this next lecture)!
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -48,10 +51,5 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedCell = collectionView.cellForItem(at: indexPath) as! ImageCollectionViewCell
         selectImage(selectedCell.image.image!)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        
     }
 }
