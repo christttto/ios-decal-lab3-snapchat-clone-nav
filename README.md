@@ -51,7 +51,7 @@ In `ImagePickerController.swift`, we've abstracted away the collection view and 
 ## Navigation Controllers + Tab bar Controllers ##
 
 - Create a navigation controller, tab bar controller, and the appropriate segues to handle the remaining navigation between these view controllers in **Main.storyboard**. Use the interactive mockup to check that you've completed this step correctly.
-- Create an unwind segue from the "Send" button in **ImagePreviewViewController** to take you back to the **ImagePickerViewController**
+- Create an unwind segue from the "Send" button in **ImagePreviewViewController** to take you back to the **ImagePickerViewController**. Here's a nice article on how to create these: [Create Unwind segues in Swift 3](https://medium.com/@mimicatcodes/create-unwind-segues-in-swift-3-8793f7d23c6f)
 - (optional) The default tab icons are not visually helpful for users. Customize the tab icons so that it looks like the image in the Overview section.
 
 Notes: 
