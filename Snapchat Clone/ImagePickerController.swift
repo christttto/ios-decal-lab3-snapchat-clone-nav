@@ -8,32 +8,31 @@
 
 import UIKit
 
+/// Grid of images - in a future assignment, you'll be replacing this view controller with a camera
 class ImagePickerController: UIViewController {
-
+    
     @IBOutlet var imageCollectionView: UICollectionView!
-    
-    var myButton: UIButton = {
-        let button = UIButton()
-        button.backg
-        return button
-    }()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageCollectionView.dataSource = self
+        navigationController?.navigationBar.barTintColor = UIColor(red: 0, green: 0.8196, blue: 0.9294, alpha: 1.0)
+        navigationController?.navigationBar.tintColor = UIColor.white
+        imageCollectionView.collectionViewLayout = ImageFlowLayout()
     }
-}
 
-extension ImagePickerController: UICollectionViewDataSource {
-    
-    var cellImages = [UIImage(named: "dog"), UIImage(named: "dog2")]
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cellImages.count
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // implementation hidden
+    /// This method is called every time a image cell is tapped. You'll
+    /// need to use pass the `image` parameter in some way to the
+    /// ImagePreviewViewController
+    ///
+    /// - Parameter image: UIImage displayed in the selected cell
+    func selectImage(_ image: UIImage) {
+        // TODO: take this image and display it in a new view controller
     }
+    
+    /// TODO: override prepareForSegue to pass the selected image over to the next view
+
 }

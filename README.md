@@ -1,11 +1,4 @@
-# iOS DeCal Lab 3 - Multiview Applications
-Note README has been updated to help clear up some confusion (9/28 12:07am). If you repull the repository, there are some included comments in `ImagePickerController.swift` and `ImagePreviewViewController.swift` that may also help you get on track (optional). 
-
-- Tutorial videos if you're stuck!
-	- [Lab Overview](https://www.youtube.com/watch?v=gKHptiZXs0k) - what the end goal is and little overview of `ImagePickerController.swift`
-	- [2 ways to create segues via storyboard](https://www.youtube.com/watch?v=uPyzMMi9aGM) - we went over two ways to create segues in lecture, and it seemed to trip up some people. Here's a video going over both ways.
-	- [Embedding view controllers in Navigation controllers and TabBar Controllers](https://www.youtube.com/watch?v=1D-VYVMl6Og&feature=youtu.be)
-	- [Passing data between vc's via performForSegue](https://www.youtube.com/edit?o=U&video_id=KodRcYkFfMY) - lengthy video (sorry!) about how to send a string from one view controller to whichever view controller you are seguing to.
+# iOS DeCal Lab 3 - Multiview Applications (Snapchat Clone Navigation)
 
 ## Overview ##
 In today's lab, we'll be creating a simple multiview app using navigation controllers. Users should be able to select an image and the app will open a bigger version of the image in a new view.
@@ -29,7 +22,7 @@ Once you have opened the project in Xcode, notice the files present in the Navig
 We have provided the following files for you to use. 
 
 1. `ImageFeed.swift` in the `Model` folder - this file contains some useful global variables defined for you.
-2. `ImagePickerController.swift` in the `View Controller` folder - this file provides abstracts you from the collection view implementation and provides some useful functions. You will be adding code to this file in this lab. **Please see comment updates made to this file after lab**
+2. `ImagePickerController.swift` in the `View Controller` folder - this file provides abstracts you from the collection view implementation and provides some useful functions. You will be adding code to this file in this lab.
 3. `ImagePreviewViewController.swift` in the `View Controller` folder - a currently dumb view controller, to preview snaps from.
 4. `Main.storyboard` in the `View` folder - this is where you will be creating your Views and UI elements (buttons, labels, etc). This file is automatically created for you each time you start a new Xcode project.
 5. `Assets.xcassets` in the `View` folder - contains all of the images used in the app (we have only included some sample images, but if you'd like to add your own images to customize the app, add them here). This is another file that is automatically created for you each time you create a new Xcode project.
@@ -51,7 +44,7 @@ In `ImagePickerController.swift`, we've abstracted away the collection view and 
 ## Navigation Controllers + Tab bar Controllers ##
 
 - Create a navigation controller, tab bar controller, and the appropriate segues to handle the remaining navigation between these view controllers in **Main.storyboard**. Use the interactive mockup to check that you've completed this step correctly.
-- Create an unwind segue from the "Send" button in **ImagePreviewViewController** to take you back to the **ImagePickerViewController**. Here's a nice article on how to create these: [Create Unwind segues in Swift 3](https://medium.com/@mimicatcodes/create-unwind-segues-in-swift-3-8793f7d23c6f)
+- Create an unwind segue from the "Send" button in **ImagePreviewViewController** to take you back to the **ImagePickerViewController**. Here's a nice article on how to create these: [Create Manual Unwind segues in Swift 3](https://medium.com/@mimicatcodes/create-unwind-segues-in-swift-3-8793f7d23c6f) (works for Swift 4).
 - (optional) The default tab icons are not visually helpful for users. Customize the tab icons so that it looks like the image in the Overview section.
 
 Notes: 
@@ -60,4 +53,13 @@ Notes:
 
 ## Grading ##
 
-Once you've finished the lab, you can check-off using this form https://goo.gl/forms/h08ywsWmui9gwv1R2. If you weren't able to finish before 8:30pm, make sure to let a TA know you attended (do not fill out the google form), and be sure to check-off next week at the beginning of lab.
+Once you've finished the lab, you can check-off using this form: [https://goo.gl/forms/5mOpkPoP1AwnE1612](https://goo.gl/forms/5mOpkPoP1AwnE1612). If you weren't able to finish before 8pm, make sure to fill in the keyword question, and be sure to check-off next week at the beginning of lab.
+
+
+## Additional Resources ##
+
+- Tutorial videos if you're stuck!
+	- [Lab Overview](https://www.youtube.com/watch?v=gKHptiZXs0k) - what the end goal is and little overview of `ImagePickerController.swift`
+	- [2 ways to create segues via storyboard](https://www.youtube.com/watch?v=uPyzMMi9aGM) - we went over two ways to create segues in lecture, and it seemed to trip up some people. Here's a video going over both ways.
+	- [Embedding view controllers in Navigation controllers and TabBar Controllers](https://www.youtube.com/watch?v=1D-VYVMl6Og&feature=youtu.be)
+	- [Passing data between vc's via performForSegue](https://www.youtube.com/watch?v=KodRcYkFfMY) - lengthy video (sorry!) about how to send a string from one view controller to whichever view controller you are seguing to.
