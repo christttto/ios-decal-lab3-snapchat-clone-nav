@@ -154,7 +154,7 @@
                             <constraint firstItem="uYK-K6-bhD" firstAttribute="centerY" secondItem="Lou-Ei-BSr" secondAttribute="centerY" id="IfW-NU-3rq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="post" id="EbA-pX-oW1"/>
+                    <tabBarItem key="tabBarItem" title="" id="EbA-pX-oW1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clc-56-cVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,7 +163,6 @@
     </scenes>
     <resources>
         <image name="feed" width="32" height="32"/>
-        <image name="post" width="32" height="32"/>
         <image name="sendButton" width="132" height="130"/>
         <image name="w1" width="1242" height="2208"/>
     </resources>
