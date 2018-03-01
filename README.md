@@ -11,7 +11,7 @@ This lab will build the basics for your snapChat project. It aims to help you le
 
 To get started, first clone this repository onto your own computer:
 	
-	git clone https://github.com/iosdecal/ios-decal-lab3-fall17
+	git clone https://github.com/iosdecal/ios-decal-lab3-snapchat-clone-nav.git
 
 Open the file `Snapchat Clone.xcodeproj` to start the lab.
 
